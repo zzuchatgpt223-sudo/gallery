@@ -2,6 +2,25 @@
 // 重新运行 python generate.py 即可更新
 
 const galleryData = {
+  "BanG Dream!": {
+    "subcategories": {
+      "凑友希那": {
+        "cover": "images/BanG Dream!/凑友希那/AA329.jpg",
+        "images": [
+          "images/BanG Dream!/凑友希那/AA329.jpg",
+          "images/BanG Dream!/凑友希那/AA330.jpg",
+          "images/BanG Dream!/凑友希那/AA331.jpg",
+          "images/BanG Dream!/凑友希那/AA332.jpg",
+          "images/BanG Dream!/凑友希那/AA333.jpg",
+          "images/BanG Dream!/凑友希那/AA334.jpg",
+          "images/BanG Dream!/凑友希那/AA335.jpg",
+          "images/BanG Dream!/凑友希那/AA336.jpg",
+          "images/BanG Dream!/凑友希那/AA337.jpg"
+        ]
+      }
+    },
+    "cover": "images/BanG Dream!/images.jpg"
+  },
   "LoveLive!": {
     "subcategories": {
       "南小鸟": {
@@ -17,6 +36,21 @@ const galleryData = {
           "images/LoveLive!/南小鸟/AA68.jpg",
           "images/LoveLive!/南小鸟/AA69.jpg",
           "images/LoveLive!/南小鸟/AA70.jpg"
+        ]
+      },
+      "园田海未": {
+        "cover": "images/LoveLive!/园田海未/AA348.jpg",
+        "images": [
+          "images/LoveLive!/园田海未/AA348.jpg",
+          "images/LoveLive!/园田海未/AA349.jpg",
+          "images/LoveLive!/园田海未/AA350.jpg",
+          "images/LoveLive!/园田海未/AA351.jpg",
+          "images/LoveLive!/园田海未/AA352.jpg",
+          "images/LoveLive!/园田海未/AA353.jpg",
+          "images/LoveLive!/园田海未/AA354.jpg",
+          "images/LoveLive!/园田海未/AA355.jpg",
+          "images/LoveLive!/园田海未/AA356.jpg",
+          "images/LoveLive!/园田海未/AA357.jpg"
         ]
       }
     },
@@ -42,6 +76,46 @@ const galleryData = {
     },
     "cover": "images/LoveLive!学园偶像祭/0000996526.jpg"
   },
+  "Lycoris Recoil莉可丽丝": {
+    "subcategories": {
+      "锦木千束": {
+        "cover": "images/Lycoris Recoil莉可丽丝/锦木千束/AA538.jpg",
+        "images": [
+          "images/Lycoris Recoil莉可丽丝/锦木千束/AA538.jpg",
+          "images/Lycoris Recoil莉可丽丝/锦木千束/AA539.jpg",
+          "images/Lycoris Recoil莉可丽丝/锦木千束/AA540.jpg",
+          "images/Lycoris Recoil莉可丽丝/锦木千束/AA541.jpg",
+          "images/Lycoris Recoil莉可丽丝/锦木千束/AA542.jpg",
+          "images/Lycoris Recoil莉可丽丝/锦木千束/AA543.jpg",
+          "images/Lycoris Recoil莉可丽丝/锦木千束/AA544.jpg",
+          "images/Lycoris Recoil莉可丽丝/锦木千束/AA545.jpg",
+          "images/Lycoris Recoil莉可丽丝/锦木千束/AA546.jpg",
+          "images/Lycoris Recoil莉可丽丝/锦木千束/AA547.jpg"
+        ]
+      }
+    },
+    "cover": "images/Lycoris Recoil莉可丽丝/images.jpg"
+  },
+  "不要欺负我，长瀞同学": {
+    "subcategories": {
+      "长瀞早濑": {
+        "cover": "images/不要欺负我，长瀞同学/长瀞早濑/AA548.jpg",
+        "images": [
+          "images/不要欺负我，长瀞同学/长瀞早濑/AA548.jpg",
+          "images/不要欺负我，长瀞同学/长瀞早濑/AA549.jpg",
+          "images/不要欺负我，长瀞同学/长瀞早濑/AA550.jpg",
+          "images/不要欺负我，长瀞同学/长瀞早濑/AA551.jpg",
+          "images/不要欺负我，长瀞同学/长瀞早濑/AA552.jpg",
+          "images/不要欺负我，长瀞同学/长瀞早濑/AA553.jpg",
+          "images/不要欺负我，长瀞同学/长瀞早濑/AA554.jpg",
+          "images/不要欺负我，长瀞同学/长瀞早濑/AA555.jpg",
+          "images/不要欺负我，长瀞同学/长瀞早濑/AA556.jpg",
+          "images/不要欺负我，长瀞同学/长瀞早濑/AA557.jpg"
+        ]
+      }
+    },
+    "cover": "images/不要欺负我，长瀞同学/images.jpg"
+  },
   "东方Project": {
     "subcategories": {
       "八云紫": {
@@ -59,6 +133,21 @@ const galleryData = {
           "images/东方Project/八云紫/AA20.jpg"
         ]
       },
+      "古明地恋": {
+        "cover": "images/东方Project/古明地恋/AA319.jpg",
+        "images": [
+          "images/东方Project/古明地恋/AA319.jpg",
+          "images/东方Project/古明地恋/AA320.jpg",
+          "images/东方Project/古明地恋/AA321.jpg",
+          "images/东方Project/古明地恋/AA322.jpg",
+          "images/东方Project/古明地恋/AA323.jpg",
+          "images/东方Project/古明地恋/AA324.jpg",
+          "images/东方Project/古明地恋/AA325.jpg",
+          "images/东方Project/古明地恋/AA326.jpg",
+          "images/东方Project/古明地恋/AA327.jpg",
+          "images/东方Project/古明地恋/AA328.jpg"
+        ]
+      },
       "少名针妙丸": {
         "cover": "images/东方Project/少名针妙丸/AA131.jpg",
         "images": [
@@ -73,9 +162,44 @@ const galleryData = {
           "images/东方Project/少名针妙丸/AA139.jpg",
           "images/东方Project/少名针妙丸/AA140.jpg"
         ]
+      },
+      "庭渡久侘歌": {
+        "cover": "images/东方Project/庭渡久侘歌/AA378.jpg",
+        "images": [
+          "images/东方Project/庭渡久侘歌/AA378.jpg",
+          "images/东方Project/庭渡久侘歌/AA379.jpg",
+          "images/东方Project/庭渡久侘歌/AA380.jpg",
+          "images/东方Project/庭渡久侘歌/AA381.jpg",
+          "images/东方Project/庭渡久侘歌/AA382.jpg",
+          "images/东方Project/庭渡久侘歌/AA383.jpg",
+          "images/东方Project/庭渡久侘歌/AA384.jpg",
+          "images/东方Project/庭渡久侘歌/AA385.jpg",
+          "images/东方Project/庭渡久侘歌/AA386.jpg",
+          "images/东方Project/庭渡久侘歌/AA387.jpg"
+        ]
       }
     },
     "cover": "images/东方Project/images.jpg"
+  },
+  "从零开始的异世界生活": {
+    "subcategories": {
+      "艾米莉亚": {
+        "cover": "images/从零开始的异世界生活/艾米莉亚/AA498.jpg",
+        "images": [
+          "images/从零开始的异世界生活/艾米莉亚/AA498.jpg",
+          "images/从零开始的异世界生活/艾米莉亚/AA499.jpg",
+          "images/从零开始的异世界生活/艾米莉亚/AA500.jpg",
+          "images/从零开始的异世界生活/艾米莉亚/AA501.jpg",
+          "images/从零开始的异世界生活/艾米莉亚/AA502.jpg",
+          "images/从零开始的异世界生活/艾米莉亚/AA503.jpg",
+          "images/从零开始的异世界生活/艾米莉亚/AA504.jpg",
+          "images/从零开始的异世界生活/艾米莉亚/AA505.jpg",
+          "images/从零开始的异世界生活/艾米莉亚/AA506.jpg",
+          "images/从零开始的异世界生活/艾米莉亚/AA507.jpg"
+        ]
+      }
+    },
+    "cover": "images/从零开始的异世界生活/images.jpg"
   },
   "佐贺偶像是传奇": {
     "subcategories": {
@@ -114,6 +238,36 @@ const galleryData = {
           "images/偶像大师 灰姑娘女孩/岛村卯月/AA150.jpg"
         ]
       },
+      "梦见璃亚梦": {
+        "cover": "images/偶像大师 灰姑娘女孩/梦见璃亚梦/AA408.jpg",
+        "images": [
+          "images/偶像大师 灰姑娘女孩/梦见璃亚梦/AA408.jpg",
+          "images/偶像大师 灰姑娘女孩/梦见璃亚梦/AA409.jpg",
+          "images/偶像大师 灰姑娘女孩/梦见璃亚梦/AA410.jpg",
+          "images/偶像大师 灰姑娘女孩/梦见璃亚梦/AA411.jpg",
+          "images/偶像大师 灰姑娘女孩/梦见璃亚梦/AA412.jpg",
+          "images/偶像大师 灰姑娘女孩/梦见璃亚梦/AA413.jpg",
+          "images/偶像大师 灰姑娘女孩/梦见璃亚梦/AA414.jpg",
+          "images/偶像大师 灰姑娘女孩/梦见璃亚梦/AA415.jpg",
+          "images/偶像大师 灰姑娘女孩/梦见璃亚梦/AA416.jpg",
+          "images/偶像大师 灰姑娘女孩/梦见璃亚梦/AA417.jpg"
+        ]
+      },
+      "盐见周子": {
+        "cover": "images/偶像大师 灰姑娘女孩/盐见周子/AA458.jpg",
+        "images": [
+          "images/偶像大师 灰姑娘女孩/盐见周子/AA458.jpg",
+          "images/偶像大师 灰姑娘女孩/盐见周子/AA459.jpg",
+          "images/偶像大师 灰姑娘女孩/盐见周子/AA460.jpg",
+          "images/偶像大师 灰姑娘女孩/盐见周子/AA461.jpg",
+          "images/偶像大师 灰姑娘女孩/盐见周子/AA462.jpg",
+          "images/偶像大师 灰姑娘女孩/盐见周子/AA463.jpg",
+          "images/偶像大师 灰姑娘女孩/盐见周子/AA464.jpg",
+          "images/偶像大师 灰姑娘女孩/盐见周子/AA465.jpg",
+          "images/偶像大师 灰姑娘女孩/盐见周子/AA466.jpg",
+          "images/偶像大师 灰姑娘女孩/盐见周子/AA467.jpg"
+        ]
+      },
       "砂冢亚季良": {
         "cover": "images/偶像大师 灰姑娘女孩/砂冢亚季良/AA230.jpg",
         "images": [
@@ -128,9 +282,84 @@ const galleryData = {
           "images/偶像大师 灰姑娘女孩/砂冢亚季良/AA238.jpg",
           "images/偶像大师 灰姑娘女孩/砂冢亚季良/AA239.jpg"
         ]
+      },
+      "鹭泽文香": {
+        "cover": "images/偶像大师 灰姑娘女孩/鹭泽文香/AA578.jpg",
+        "images": [
+          "images/偶像大师 灰姑娘女孩/鹭泽文香/AA578.jpg",
+          "images/偶像大师 灰姑娘女孩/鹭泽文香/AA579.jpg",
+          "images/偶像大师 灰姑娘女孩/鹭泽文香/AA580.jpg",
+          "images/偶像大师 灰姑娘女孩/鹭泽文香/AA581.jpg",
+          "images/偶像大师 灰姑娘女孩/鹭泽文香/AA582.jpg",
+          "images/偶像大师 灰姑娘女孩/鹭泽文香/AA583.jpg",
+          "images/偶像大师 灰姑娘女孩/鹭泽文香/AA584.jpg",
+          "images/偶像大师 灰姑娘女孩/鹭泽文香/AA585.jpg",
+          "images/偶像大师 灰姑娘女孩/鹭泽文香/AA586.jpg",
+          "images/偶像大师 灰姑娘女孩/鹭泽文香/AA587.jpg"
+        ]
       }
     },
     "cover": "images/偶像大师 灰姑娘女孩/images.jpg"
+  },
+  "偶像大师 百万现场": {
+    "subcategories": {
+      "田中琴叶": {
+        "cover": "images/偶像大师 百万现场/田中琴叶/AA448.jpg",
+        "images": [
+          "images/偶像大师 百万现场/田中琴叶/AA448.jpg",
+          "images/偶像大师 百万现场/田中琴叶/AA449.jpg",
+          "images/偶像大师 百万现场/田中琴叶/AA450.jpg",
+          "images/偶像大师 百万现场/田中琴叶/AA451.jpg",
+          "images/偶像大师 百万现场/田中琴叶/AA452.jpg",
+          "images/偶像大师 百万现场/田中琴叶/AA453.jpg",
+          "images/偶像大师 百万现场/田中琴叶/AA454.jpg",
+          "images/偶像大师 百万现场/田中琴叶/AA455.jpg",
+          "images/偶像大师 百万现场/田中琴叶/AA456.jpg",
+          "images/偶像大师 百万现场/田中琴叶/AA457.jpg"
+        ]
+      }
+    },
+    "cover": "images/偶像大师 百万现场/images.jpg"
+  },
+  "偶像大师 闪耀色彩": {
+    "subcategories": {
+      "浅仓透": {
+        "cover": "images/偶像大师 闪耀色彩/浅仓透/AA418.jpg",
+        "images": [
+          "images/偶像大师 闪耀色彩/浅仓透/AA418.jpg",
+          "images/偶像大师 闪耀色彩/浅仓透/AA419.jpg",
+          "images/偶像大师 闪耀色彩/浅仓透/AA420.jpg",
+          "images/偶像大师 闪耀色彩/浅仓透/AA421.jpg",
+          "images/偶像大师 闪耀色彩/浅仓透/AA422.jpg",
+          "images/偶像大师 闪耀色彩/浅仓透/AA423.jpg",
+          "images/偶像大师 闪耀色彩/浅仓透/AA424.jpg",
+          "images/偶像大师 闪耀色彩/浅仓透/AA425.jpg",
+          "images/偶像大师 闪耀色彩/浅仓透/AA426.jpg",
+          "images/偶像大师 闪耀色彩/浅仓透/AA427.jpg"
+        ]
+      }
+    },
+    "cover": "images/偶像大师 闪耀色彩/images.jpg"
+  },
+  "别当欧尼酱了！": {
+    "subcategories": {
+      "绪山美波里": {
+        "cover": "images/别当欧尼酱了！/绪山美波里/AA488.jpg",
+        "images": [
+          "images/别当欧尼酱了！/绪山美波里/AA488.jpg",
+          "images/别当欧尼酱了！/绪山美波里/AA489.jpg",
+          "images/别当欧尼酱了！/绪山美波里/AA490.jpg",
+          "images/别当欧尼酱了！/绪山美波里/AA491.jpg",
+          "images/别当欧尼酱了！/绪山美波里/AA492.jpg",
+          "images/别当欧尼酱了！/绪山美波里/AA493.jpg",
+          "images/别当欧尼酱了！/绪山美波里/AA494.jpg",
+          "images/别当欧尼酱了！/绪山美波里/AA495.jpg",
+          "images/别当欧尼酱了！/绪山美波里/AA496.jpg",
+          "images/别当欧尼酱了！/绪山美波里/AA497.jpg"
+        ]
+      }
+    },
+    "cover": "images/别当欧尼酱了！/images.jpg"
   },
   "原神": {
     "subcategories": {
@@ -187,6 +416,26 @@ const galleryData = {
     },
     "cover": "images/命运石之门/images.jpg"
   },
+  "学园偶像大师": {
+    "subcategories": {
+      "月村手毬": {
+        "cover": "images/学园偶像大师/月村手毬/AA388.jpg",
+        "images": [
+          "images/学园偶像大师/月村手毬/AA388.jpg",
+          "images/学园偶像大师/月村手毬/AA389.jpg",
+          "images/学园偶像大师/月村手毬/AA390.jpg",
+          "images/学园偶像大师/月村手毬/AA391.jpg",
+          "images/学园偶像大师/月村手毬/AA392.jpg",
+          "images/学园偶像大师/月村手毬/AA393.jpg",
+          "images/学园偶像大师/月村手毬/AA394.jpg",
+          "images/学园偶像大师/月村手毬/AA395.jpg",
+          "images/学园偶像大师/月村手毬/AA396.jpg",
+          "images/学园偶像大师/月村手毬/AA397.jpg"
+        ]
+      }
+    },
+    "cover": "images/学园偶像大师/images.jpg"
+  },
   "对魔忍": {
     "subcategories": {
       "水城雪风": {
@@ -205,6 +454,26 @@ const galleryData = {
       }
     },
     "cover": "images/对魔忍/images.jpg"
+  },
+  "少女与战车": {
+    "subcategories": {
+      "岛田千代": {
+        "cover": "images/少女与战车/岛田千代/AA358.jpg",
+        "images": [
+          "images/少女与战车/岛田千代/AA358.jpg",
+          "images/少女与战车/岛田千代/AA359.jpg",
+          "images/少女与战车/岛田千代/AA360.jpg",
+          "images/少女与战车/岛田千代/AA361.jpg",
+          "images/少女与战车/岛田千代/AA362.jpg",
+          "images/少女与战车/岛田千代/AA363.jpg",
+          "images/少女与战车/岛田千代/AA364.jpg",
+          "images/少女与战车/岛田千代/AA365.jpg",
+          "images/少女与战车/岛田千代/AA366.jpg",
+          "images/少女与战车/岛田千代/AA367.jpg"
+        ]
+      }
+    },
+    "cover": "images/少女与战车/images.jpg"
   },
   "少女革命": {
     "subcategories": {
@@ -226,8 +495,43 @@ const galleryData = {
     },
     "cover": "images/少女革命/images.jpg"
   },
+  "崩坏3": {
+    "subcategories": {
+      "格蕾修": {
+        "cover": "images/崩坏3/格蕾修/AA398.jpg",
+        "images": [
+          "images/崩坏3/格蕾修/AA398.jpg",
+          "images/崩坏3/格蕾修/AA399.jpg",
+          "images/崩坏3/格蕾修/AA400.jpg",
+          "images/崩坏3/格蕾修/AA401.jpg",
+          "images/崩坏3/格蕾修/AA402.jpg",
+          "images/崩坏3/格蕾修/AA403.jpg",
+          "images/崩坏3/格蕾修/AA404.jpg",
+          "images/崩坏3/格蕾修/AA405.jpg",
+          "images/崩坏3/格蕾修/AA406.jpg",
+          "images/崩坏3/格蕾修/AA407.jpg"
+        ]
+      }
+    },
+    "cover": "images/崩坏3/images.jpg"
+  },
   "崩坏星穹铁道": {
     "subcategories": {
+      "遐蝶": {
+        "cover": "images/崩坏星穹铁道/遐蝶/AA528.jpg",
+        "images": [
+          "images/崩坏星穹铁道/遐蝶/AA528.jpg",
+          "images/崩坏星穹铁道/遐蝶/AA529.jpg",
+          "images/崩坏星穹铁道/遐蝶/AA530.jpg",
+          "images/崩坏星穹铁道/遐蝶/AA531.jpg",
+          "images/崩坏星穹铁道/遐蝶/AA532.jpg",
+          "images/崩坏星穹铁道/遐蝶/AA533.jpg",
+          "images/崩坏星穹铁道/遐蝶/AA534.jpg",
+          "images/崩坏星穹铁道/遐蝶/AA535.jpg",
+          "images/崩坏星穹铁道/遐蝶/AA536.jpg",
+          "images/崩坏星穹铁道/遐蝶/AA537.jpg"
+        ]
+      },
       "阮梅": {
         "cover": "images/崩坏星穹铁道/阮梅/AA299.jpg",
         "images": [
@@ -241,6 +545,21 @@ const galleryData = {
           "images/崩坏星穹铁道/阮梅/AA306.jpg",
           "images/崩坏星穹铁道/阮梅/AA307.jpg",
           "images/崩坏星穹铁道/阮梅/AA308.jpg"
+        ]
+      },
+      "风堇": {
+        "cover": "images/崩坏星穹铁道/风堇/AA558.jpg",
+        "images": [
+          "images/崩坏星穹铁道/风堇/AA558.jpg",
+          "images/崩坏星穹铁道/风堇/AA559.jpg",
+          "images/崩坏星穹铁道/风堇/AA560.jpg",
+          "images/崩坏星穹铁道/风堇/AA561.jpg",
+          "images/崩坏星穹铁道/风堇/AA562.jpg",
+          "images/崩坏星穹铁道/风堇/AA563.jpg",
+          "images/崩坏星穹铁道/风堇/AA564.jpg",
+          "images/崩坏星穹铁道/风堇/AA565.jpg",
+          "images/崩坏星穹铁道/风堇/AA566.jpg",
+          "images/崩坏星穹铁道/风堇/AA567.jpg"
         ]
       }
     },
@@ -261,6 +580,36 @@ const galleryData = {
           "images/彩虹社/椎名唯华/AA178.jpg",
           "images/彩虹社/椎名唯华/AA179.jpg",
           "images/彩虹社/椎名唯华/AA180.jpg"
+        ]
+      },
+      "物述有栖": {
+        "cover": "images/彩虹社/物述有栖/AA428.jpg",
+        "images": [
+          "images/彩虹社/物述有栖/AA428.jpg",
+          "images/彩虹社/物述有栖/AA429.jpg",
+          "images/彩虹社/物述有栖/AA430.jpg",
+          "images/彩虹社/物述有栖/AA431.jpg",
+          "images/彩虹社/物述有栖/AA432.jpg",
+          "images/彩虹社/物述有栖/AA433.jpg",
+          "images/彩虹社/物述有栖/AA434.jpg",
+          "images/彩虹社/物述有栖/AA435.jpg",
+          "images/彩虹社/物述有栖/AA436.jpg",
+          "images/彩虹社/物述有栖/AA437.jpg"
+        ]
+      },
+      "龙胆尊": {
+        "cover": "images/彩虹社/龙胆尊/AA588.jpg",
+        "images": [
+          "images/彩虹社/龙胆尊/AA588.jpg",
+          "images/彩虹社/龙胆尊/AA589.jpg",
+          "images/彩虹社/龙胆尊/AA590.jpg",
+          "images/彩虹社/龙胆尊/AA591.jpg",
+          "images/彩虹社/龙胆尊/AA592.jpg",
+          "images/彩虹社/龙胆尊/AA593.jpg",
+          "images/彩虹社/龙胆尊/AA594.jpg",
+          "images/彩虹社/龙胆尊/AA595.jpg",
+          "images/彩虹社/龙胆尊/AA596.jpg",
+          "images/彩虹社/龙胆尊/AA597.jpg"
         ]
       }
     },
@@ -361,6 +710,26 @@ const galleryData = {
     },
     "cover": "images/摇曳露营△/images.jpg"
   },
+  "斩服少女": {
+    "subcategories": {
+      "鬼龙院皋月": {
+        "cover": "images/斩服少女/鬼龙院皋月/AA568.jpg",
+        "images": [
+          "images/斩服少女/鬼龙院皋月/AA568.jpg",
+          "images/斩服少女/鬼龙院皋月/AA569.jpg",
+          "images/斩服少女/鬼龙院皋月/AA570.jpg",
+          "images/斩服少女/鬼龙院皋月/AA571.jpg",
+          "images/斩服少女/鬼龙院皋月/AA572.jpg",
+          "images/斩服少女/鬼龙院皋月/AA573.jpg",
+          "images/斩服少女/鬼龙院皋月/AA574.jpg",
+          "images/斩服少女/鬼龙院皋月/AA575.jpg",
+          "images/斩服少女/鬼龙院皋月/AA576.jpg",
+          "images/斩服少女/鬼龙院皋月/AA577.jpg"
+        ]
+      }
+    },
+    "cover": "images/斩服少女/images.jpg"
+  },
   "新世纪福音战士": {
     "subcategories": {
       "葛城美里": {
@@ -391,6 +760,26 @@ const galleryData = {
     },
     "cover": "images/新世纪福音战士/images.jpg"
   },
+  "无职转生～到了异世界就拿出真本事～": {
+    "subcategories": {
+      "希露菲叶特": {
+        "cover": "images/无职转生～到了异世界就拿出真本事～/希露菲叶特/AA368.jpg",
+        "images": [
+          "images/无职转生～到了异世界就拿出真本事～/希露菲叶特/AA368.jpg",
+          "images/无职转生～到了异世界就拿出真本事～/希露菲叶特/AA369.jpg",
+          "images/无职转生～到了异世界就拿出真本事～/希露菲叶特/AA370.jpg",
+          "images/无职转生～到了异世界就拿出真本事～/希露菲叶特/AA371.jpg",
+          "images/无职转生～到了异世界就拿出真本事～/希露菲叶特/AA372.jpg",
+          "images/无职转生～到了异世界就拿出真本事～/希露菲叶特/AA373.jpg",
+          "images/无职转生～到了异世界就拿出真本事～/希露菲叶特/AA374.jpg",
+          "images/无职转生～到了异世界就拿出真本事～/希露菲叶特/AA375.jpg",
+          "images/无职转生～到了异世界就拿出真本事～/希露菲叶特/AA376.jpg",
+          "images/无职转生～到了异世界就拿出真本事～/希露菲叶特/AA377.jpg"
+        ]
+      }
+    },
+    "cover": "images/无职转生～到了异世界就拿出真本事～/images.jpg"
+  },
   "未闻花名": {
     "subcategories": {
       "安城鸣子": {
@@ -410,6 +799,46 @@ const galleryData = {
       }
     },
     "cover": "images/未闻花名/images.jpg"
+  },
+  "来自风平浪静的明天": {
+    "subcategories": {
+      "向井户爱花": {
+        "cover": "images/来自风平浪静的明天/向井户爱花/AA338.jpg",
+        "images": [
+          "images/来自风平浪静的明天/向井户爱花/AA338.jpg",
+          "images/来自风平浪静的明天/向井户爱花/AA339.jpg",
+          "images/来自风平浪静的明天/向井户爱花/AA340.jpg",
+          "images/来自风平浪静的明天/向井户爱花/AA341.jpg",
+          "images/来自风平浪静的明天/向井户爱花/AA342.jpg",
+          "images/来自风平浪静的明天/向井户爱花/AA343.jpg",
+          "images/来自风平浪静的明天/向井户爱花/AA344.jpg",
+          "images/来自风平浪静的明天/向井户爱花/AA345.jpg",
+          "images/来自风平浪静的明天/向井户爱花/AA346.jpg",
+          "images/来自风平浪静的明天/向井户爱花/AA347.jpg"
+        ]
+      }
+    },
+    "cover": "images/来自风平浪静的明天/images.jpg"
+  },
+  "欢迎来到实力至上主义的教室": {
+    "subcategories": {
+      "一之濑帆波": {
+        "cover": "images/欢迎来到实力至上主义的教室/一之濑帆波/AA309.jpg",
+        "images": [
+          "images/欢迎来到实力至上主义的教室/一之濑帆波/AA309.jpg",
+          "images/欢迎来到实力至上主义的教室/一之濑帆波/AA310.jpg",
+          "images/欢迎来到实力至上主义的教室/一之濑帆波/AA311.jpg",
+          "images/欢迎来到实力至上主义的教室/一之濑帆波/AA312.jpg",
+          "images/欢迎来到实力至上主义的教室/一之濑帆波/AA313.jpg",
+          "images/欢迎来到实力至上主义的教室/一之濑帆波/AA314.jpg",
+          "images/欢迎来到实力至上主义的教室/一之濑帆波/AA315.jpg",
+          "images/欢迎来到实力至上主义的教室/一之濑帆波/AA316.jpg",
+          "images/欢迎来到实力至上主义的教室/一之濑帆波/AA317.jpg",
+          "images/欢迎来到实力至上主义的教室/一之濑帆波/AA318.jpg"
+        ]
+      }
+    },
+    "cover": "images/欢迎来到实力至上主义的教室/images.jpg"
   },
   "海猫鸣泣之时": {
     "subcategories": {
@@ -467,6 +896,21 @@ const galleryData = {
           "images/绝区零/月城柳/AA169.jpg",
           "images/绝区零/月城柳/AA170.jpg"
         ]
+      },
+      "猫宫又奈": {
+        "cover": "images/绝区零/猫宫又奈/AA438.jpg",
+        "images": [
+          "images/绝区零/猫宫又奈/AA438.jpg",
+          "images/绝区零/猫宫又奈/AA439.jpg",
+          "images/绝区零/猫宫又奈/AA440.jpg",
+          "images/绝区零/猫宫又奈/AA441.jpg",
+          "images/绝区零/猫宫又奈/AA442.jpg",
+          "images/绝区零/猫宫又奈/AA443.jpg",
+          "images/绝区零/猫宫又奈/AA444.jpg",
+          "images/绝区零/猫宫又奈/AA445.jpg",
+          "images/绝区零/猫宫又奈/AA446.jpg",
+          "images/绝区零/猫宫又奈/AA447.jpg"
+        ]
       }
     },
     "cover": "images/绝区零/images.jpg"
@@ -486,6 +930,21 @@ const galleryData = {
           "images/蔚蓝档案/奥空绫音/AA118.jpg",
           "images/蔚蓝档案/奥空绫音/AA119.jpg",
           "images/蔚蓝档案/奥空绫音/AA120.jpg"
+        ]
+      },
+      "砂狼白子": {
+        "cover": "images/蔚蓝档案/砂狼白子/AA468.jpg",
+        "images": [
+          "images/蔚蓝档案/砂狼白子/AA468.jpg",
+          "images/蔚蓝档案/砂狼白子/AA469.jpg",
+          "images/蔚蓝档案/砂狼白子/AA470.jpg",
+          "images/蔚蓝档案/砂狼白子/AA471.jpg",
+          "images/蔚蓝档案/砂狼白子/AA472.jpg",
+          "images/蔚蓝档案/砂狼白子/AA473.jpg",
+          "images/蔚蓝档案/砂狼白子/AA474.jpg",
+          "images/蔚蓝档案/砂狼白子/AA475.jpg",
+          "images/蔚蓝档案/砂狼白子/AA476.jpg",
+          "images/蔚蓝档案/砂狼白子/AA477.jpg"
         ]
       }
     },
@@ -513,6 +972,21 @@ const galleryData = {
   },
   "虚拟角色形象": {
     "subcategories": {
+      "紫咲诗音": {
+        "cover": "images/虚拟角色形象/紫咲诗音/AA478.jpg",
+        "images": [
+          "images/虚拟角色形象/紫咲诗音/AA478.jpg",
+          "images/虚拟角色形象/紫咲诗音/AA479.jpg",
+          "images/虚拟角色形象/紫咲诗音/AA480.jpg",
+          "images/虚拟角色形象/紫咲诗音/AA481.jpg",
+          "images/虚拟角色形象/紫咲诗音/AA482.jpg",
+          "images/虚拟角色形象/紫咲诗音/AA483.jpg",
+          "images/虚拟角色形象/紫咲诗音/AA484.jpg",
+          "images/虚拟角色形象/紫咲诗音/AA485.jpg",
+          "images/虚拟角色形象/紫咲诗音/AA486.jpg",
+          "images/虚拟角色形象/紫咲诗音/AA487.jpg"
+        ]
+      },
       "绁星灯": {
         "cover": "images/虚拟角色形象/绁星灯/AA240.jpg",
         "images": [
@@ -525,6 +999,21 @@ const galleryData = {
           "images/虚拟角色形象/绁星灯/AA246.jpg",
           "images/虚拟角色形象/绁星灯/AA247.jpg",
           "images/虚拟角色形象/绁星灯/AA248.jpg"
+        ]
+      },
+      "轰初": {
+        "cover": "images/虚拟角色形象/轰初/AA518.jpg",
+        "images": [
+          "images/虚拟角色形象/轰初/AA518.jpg",
+          "images/虚拟角色形象/轰初/AA519.jpg",
+          "images/虚拟角色形象/轰初/AA520.jpg",
+          "images/虚拟角色形象/轰初/AA521.jpg",
+          "images/虚拟角色形象/轰初/AA522.jpg",
+          "images/虚拟角色形象/轰初/AA523.jpg",
+          "images/虚拟角色形象/轰初/AA524.jpg",
+          "images/虚拟角色形象/轰初/AA525.jpg",
+          "images/虚拟角色形象/轰初/AA526.jpg",
+          "images/虚拟角色形象/轰初/AA527.jpg"
         ]
       }
     },
@@ -549,6 +1038,26 @@ const galleryData = {
       }
     },
     "cover": "images/请问您今天要来点兔子吗？/images.jpg"
+  },
+  "超级索尼子": {
+    "subcategories": {
+      "超级索尼子超级索尼子": {
+        "cover": "images/超级索尼子/超级索尼子超级索尼子/AA508.jpg",
+        "images": [
+          "images/超级索尼子/超级索尼子超级索尼子/AA508.jpg",
+          "images/超级索尼子/超级索尼子超级索尼子/AA509.jpg",
+          "images/超级索尼子/超级索尼子超级索尼子/AA510.jpg",
+          "images/超级索尼子/超级索尼子超级索尼子/AA511.jpg",
+          "images/超级索尼子/超级索尼子超级索尼子/AA512.jpg",
+          "images/超级索尼子/超级索尼子超级索尼子/AA513.jpg",
+          "images/超级索尼子/超级索尼子超级索尼子/AA514.jpg",
+          "images/超级索尼子/超级索尼子超级索尼子/AA515.jpg",
+          "images/超级索尼子/超级索尼子超级索尼子/AA516.jpg",
+          "images/超级索尼子/超级索尼子超级索尼子/AA517.jpg"
+        ]
+      }
+    },
+    "cover": "images/超级索尼子/images.jpg"
   },
   "轻音少女": {
     "subcategories": {
