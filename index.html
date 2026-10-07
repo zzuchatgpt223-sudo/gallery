@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>在线图库</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:#0f0f0f;color:#eee;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5}
+    header{background:#1a1a1a;padding:16px 20px;position:sticky;top:0;z-index:100;border-bottom:1px solid #333;display:flex;align-items:center;justify-content:space-between}
+    header h1{font-size:1.3rem;font-weight:600}
+    .back-btn{display:none;background:#333;border:none;color:#fff;padding:6px 14px;border-radius:6px;cursor:pointer;font-size:.9rem}
+    .back-btn:hover{background:#444}
+    .container{max-width:1400px;margin:0 auto;padding:24px 16px}
+    .category-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px}
+    .category-card{background:#1a1a1a;border-radius:10px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s;border:1px solid #2a2a2a}
+    .category-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.4)}
+    .category-card .cover-wrap{
+      width:100%;
+      aspect-ratio: 1 / 1;   /* 和原图一样的竖长条比例 */
+      background:#111;
+      overflow:hidden;
+    }
+    .category-card .cover-wrap img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:top center;
+      display:block;
+    }
+    .category-info{padding:10px 8px}.category-info h3{font-size:.95rem;margin-bottom:2px;word-break:break-all}
+    .category-info span{font-size:.85rem;color:#aaa}
+    .gallery-grid{display:none;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:12px}
+    .gallery-grid.active{display:grid}
+    .gallery-item{aspect-ratio:291/873;border-radius:8px;overflow:hidden;cursor:pointer;background:#1a1a1a;position:relative}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+    .gallery-item:hover img{transform:scale(1.05)}
+    .gallery-item .num{position:absolute;top:6px;left:6px;background:rgba(0,0,0,.7);color:#fff;font-size:.75rem;padding:2px 6px;border-radius:4px}
+    .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:1000;align-items:center;justify-content:center;flex-direction:column}
+    .lightbox.active{display:flex}
+    .lightbox img{max-width:95vw;max-height:85vh;object-fit:contain;border-radius:4px}
+    .lightbox-close{position:absolute;top:20px;right:24px;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;line-height:1}
+    .lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.1);border:none;color:#fff;font-size:2rem;width:50px;height:50px;border-radius:50%;cursor:pointer}
+    .lightbox-prev{left:20px}.lightbox-next{right:20px}
+    .lightbox-nav:hover{background:rgba(255,255,255,.2)}
+    .lightbox-counter{position:absolute;bottom:24px;color:#aaa;font-size:.9rem}
+    .tip{text-align:center;color:#888;margin:40px 0 20px;font-size:.95rem}
+    .disclaimer{position:fixed;inset:0;background:#0a0a0a;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px}
+    .disclaimer.hidden{display:none}
+    .disclaimer-box{background:#1a1a1a;border:1px solid #333;border-radius:16px;max-width:520px;width:100%;padding:32px 28px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+    .disclaimer-box h2{font-size:1.4rem;margin-bottom:20px;color:#ff6b6b}
+    .disclaimer-box p{font-size:.95rem;color:#ccc;margin-bottom:14px;line-height:1.7;text-align:left}
+    .disclaimer-box .warning{color:#ff9f43;font-weight:600;margin:18px 0;text-align:center}
+    .disclaimer-btns{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;justify-content:center}
+    .disclaimer-btns button{border:none;padding:12px 28px;border-radius:8px;font-size:1rem;cursor:pointer;font-weight:600;transition:opacity .2s}
+    .disclaimer-btns button:hover{opacity:.85}
+    .btn-enter{background:#e74c3c;color:#fff}
+    .btn-leave{background:#333;color:#ddd}
+    #main-content{display:none}#main-content.show{display:block}
+  </style>
+</head>
+<body>
+<div class="disclaimer" id="disclaimer">
+  <div class="disclaimer-box">
+    <h2>⚠️ 成人内容免责声明 / 18+ Only</h2>
+    <p>本网站包含<strong>大量成人元素与色情内容（色图）</strong>，仅供年满 18 周岁的成年人浏览。</p>
+    <p>本站内容<strong>仅用于选图参考与借鉴</strong>，不得用于任何其他用途。浏览即表示您已知悉并同意以上条款。</p>
+    <p class="warning">未满 18 周岁、心理承受能力较差、或患有重要疾病者，请立即关闭本页面，切勿继续浏览。</p>
+    <p style="font-size:.85rem;color:#888;text-align:center">继续进入即视为您已确认自己年满 18 岁，并自愿承担一切相关责任。</p>
+    <div class="disclaimer-btns">
+      <button class="btn-leave" onclick="window.location.href='about:blank'">我未满18岁 / 离开</button>
+      <button class="btn-enter" onclick="enterSite()">我已年满18岁，同意进入</button>
+    </div>
+  </div>
+</div>
+<div id="main-content">
+  <header>
+    <h1 id="page-title">在线图库</h1>
+    <button class="back-btn" id="back-btn" onclick="goBack()">← 返回</button>
+  </header>
+  <div class="container">
+    <p class="tip" id="tip-text">选好图后，直接截图发给客服即可</p>
+    <div class="category-grid" id="category-grid"></div>
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </div>
+</div>
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">×</button>
+  <button class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">‹</button>
+  <img id="lightbox-img" src="" alt="">
+  <button class="lightbox-nav lightbox-next" onclick="changeImage(1)">›</button>
+  <div class="lightbox-counter" id="lightbox-counter"></div>
+</div>
+<script src="data.js"></script>
+<script>
+let currentImages=[],currentIndex=0,navigationStack=[];
+
+/** 智能获取封面：自己有 cover → 用自己的；否则取第一个子分类的封面 */
+function getCover(item) {
+  if (item.cover) return item.cover;
+  if (item.images && item.images.length) return item.images[0];
+  if (item.subcategories) {
+    const firstSub = Object.values(item.subcategories)[0];
+    if (firstSub) return getCover(firstSub);
+  }
+  return "";
+}
+
+/** 统计数量 */
+function getCount(item) {
+  if (item.images) return item.images.length;
+  if (item.subcategories) return Object.keys(item.subcategories).length;
+  return 0;
+}
+
+function renderCurrentLevel(data, title="在线图库") {
+  document.getElementById('page-title').textContent = title;
+  const grid = document.getElementById('category-grid');
+  const gGrid = document.getElementById('gallery-grid');
+  grid.innerHTML = '';
+  gGrid.innerHTML = '';
+  gGrid.classList.remove('active');
+  grid.style.display = 'grid';
+
+  if (navigationStack.length > 0) {
+    document.getElementById('back-btn').style.display = 'block';
+    document.getElementById('tip-text').style.display = 'none';
+  } else {
+    document.getElementById('back-btn').style.display = 'none';
+    document.getElementById('tip-text').style.display = 'block';
+  }
+
+  if (data.subcategories) {
+    for (const [name, sub] of Object.entries(data.subcategories)) {
+      const cover = getCover(sub);
+      const count = getCount(sub);
+      const isAlbum = !!sub.images;
+
+      const card = document.createElement('div');
+      card.className = 'category-card';
+      card.onclick = () => {
+        navigationStack.push({ data, title });
+        renderCurrentLevel(sub, name);
+      };
+      card.innerHTML = `
+        <div class="cover-wrap">
+          <img src="${cover}" alt="${name}" loading="lazy"
+               onerror="this.parentElement.style.background='#333';this.style.display='none'">
+        </div>
+        <div class="category-info">
+          <h3>${name}</h3>
+          <span>${count} ${isAlbum ? '张图片' : '项内容'}</span>
+        </div>`;
+      grid.appendChild(card);
+    }
+  } else if (data.images) {
+    grid.style.display = 'none';
+    currentImages = data.images;
+    gGrid.classList.add('active');
+    data.images.forEach((src, i) => {
+      const item = document.createElement('div');
+      item.className = 'gallery-item';
+      item.onclick = () => openLightbox(i);
+      item.innerHTML = `<img src="${src}" alt="" loading="lazy"><span class="num">${i+1}</span>`;
+      gGrid.appendChild(item);
+    });
+  }
+}
+
+function goBack() {
+  if (navigationStack.length > 0) {
+    const p = navigationStack.pop();
+    renderCurrentLevel(p.data, p.title);
+  } else {
+    renderCurrentLevel({ subcategories: galleryData }, "在线图库");
+  }
+}
+
+function openLightbox(i) {
+  currentIndex = i;
+  updateLightbox();
+  document.getElementById('lightbox').classList.add('active');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+function changeImage(d) {
+  currentIndex = (currentIndex + d + currentImages.length) % currentImages.length;
+  updateLightbox();
+}
+function updateLightbox() {
+  document.getElementById('lightbox-img').src = currentImages[currentIndex];
+  document.getElementById('lightbox-counter').textContent =
+    `${currentIndex + 1} / ${currentImages.length}`;
+}
+
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('lightbox').classList.contains('active')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') changeImage(-1);
+  if (e.key === 'ArrowRight') changeImage(1);
+});
+document.getElementById('lightbox').addEventListener('click', e => {
+  if (e.target.id === 'lightbox') closeLightbox();
+});
+
+function enterSite() {
+  document.getElementById('disclaimer').classList.add('hidden');
+  document.getElementById('main-content').classList.add('show');
+  if (typeof galleryData === 'undefined' || Object.keys(galleryData).length === 0) {
+    document.getElementById('category-grid').innerHTML =
+      '<p style="color:#888;text-align:center;grid-column:1/-1;padding:40px 0">暂无图片<br>请先运行 <code>python generate.py</code> 生成 data.js</p>';
+    return;
+  }
+  renderCurrentLevel({ subcategories: galleryData }, "在线图库");
+}
+</script>
+</body>
+</html>
